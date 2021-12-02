@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image, Alert } from "react-native"
+import { View, Image, Alert, StyleSheet } from "react-native"
 
 class Archive extends Component {
     
@@ -24,7 +24,9 @@ class Archive extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        borderRadius: 1,
+        overflow: 'hidden'
     },
     bottombutton: {
         marginTop: 20

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image } from "react-native"
+import { View, Image, StyleSheet } from "react-native"
 
 const ControlRoom = () => {
     return (
@@ -21,7 +21,9 @@ const ControlRoom = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        borderRadius: 1,
+        overflow: 'hidden'
     },
     bottombutton: {
         marginTop: 20

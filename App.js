@@ -1,12 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import MainPage from "./components/MainPage"
+import EntryPage from "./components/EntryPage"
+import { NavigationContainer } from '@react-navigation/native';
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <MainPage/>
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <EntryPage/>
+      </View>
+    </NavigationContainer>
   );
 }
 
@@ -18,3 +21,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App

@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image } from "react-native"
+import { View, Image, StyleSheet } from "react-native"
 
 const Laboratory = () => {
     return (
@@ -18,5 +18,16 @@ const Laboratory = () => {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        borderRadius: 1,
+        overflow: 'hidden'
+    },
+    bottombutton: {
+        marginTop: 20
+    }
+})
 
 export default Laboratory
