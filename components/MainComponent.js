@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import { ScrollView, View, Image } from "react-native"
-
+import { FlatList, View, Image } from "react-native"
+import { createAppContainer } from 'react-navigation';
+import ROOMS from "../shared/ROOMS"
 
 class MainPage extends Component {
     
     constructor(props){
         super(props)
         this.state = {
-            turncount: 0,
             monsterroom: 0,
             playerroom: 0
         }
@@ -15,7 +15,7 @@ class MainPage extends Component {
 
     render() {
         return (
-            <ScrollView>
+            <FlatList>
                 <View style={styles.container}>
                     <View>
                         <Image source={require("../images/controlroom.jpeg")} />
@@ -23,6 +23,11 @@ class MainPage extends Component {
                     <Text>
                         {"CONTROL ROOM"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
                 <View style={styles.container}>    
                     <View>
@@ -31,6 +36,11 @@ class MainPage extends Component {
                     <Text>
                         {"ARCHIVE"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
                 <View style={styles.container}>    
                     <View>
@@ -39,6 +49,11 @@ class MainPage extends Component {
                     <Text>
                         {"CRYO STORAGE"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
                 <View style={styles.container}>
                     <View>
@@ -47,6 +62,11 @@ class MainPage extends Component {
                     <Text>
                         {"ENGINE ROOM"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
                 <View style={styles.container}>
                     <View>
@@ -55,6 +75,11 @@ class MainPage extends Component {
                     <Text>
                         {"KITCHEN"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
                 <View style={styles.container}>
                     <View>
@@ -63,6 +88,11 @@ class MainPage extends Component {
                     <Text>
                         {"LABORATORY"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
                 <View style={styles.container}>
                     <View>
@@ -71,8 +101,13 @@ class MainPage extends Component {
                     <Text>
                         {"SLEEPING QUARTERS"}
                     </Text>
+                    <Button 
+                        title="Hide Here."
+                        onPress={() => Alert.alert('Move Button pressed')}
+                        color="#BA0000"
+                    />
                 </View>
-            </ScrollView>
+            </FlatList>
         )
     }
 }
@@ -86,3 +121,5 @@ const styles = StyleSheet.create({
 })
 
 export default MainPage
+
+//look up react-navigation for version 5

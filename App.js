@@ -1,15 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import EntryPage from "./components/EntryPage"
-import { NavigationContainer } from '@react-navigation/native';
 
 function App() {
   return (
-    <NavigationContainer>
-      <View style={styles.container}>
-        <EntryPage/>
-      </View>
-    </NavigationContainer>
+    <View style={styles.container}>
+      <EntryPage/>
+    </View>
   );
 }
 

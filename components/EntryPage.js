@@ -17,7 +17,7 @@ const EntryPage = () => {
                 {"The monster is mobile. It is moving randomly from room to room, ravenous for your flesh. You pass a modem in the hall that tells you help is finally on the way, and will be there to rescue you in 5 minutes. Avoid the monster until help arrives. Good luck!"}
             </Text>
             <Button 
-                title="Hide!"
+                title="Hide! QUICK!"
                 onPress={() => Alert.alert('Hide Button pressed')}
                 color="#BA0000"
             />
